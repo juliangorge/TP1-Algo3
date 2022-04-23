@@ -1,0 +1,828 @@
+
+
+----STARTUP---- (21 April 2022 19:30:06) as /Users/juliangorge/Downloads/macos64/CuisUniversity-5096.image!
+
+
+----SNAPSHOT----(21 April 2022 19:31:50) CuisUniversity-5096.image priorSource: 4557982!
+
+----SNAPSHOT----(21 April 2022 19:33:08) CuisUniversity-5096.image priorSource: 4558177!
+
+----End fileIn of /Users/juliangorge/Downloads/ejercicios-2022-1c-main/01-AvispasYAbejas/Ejercicio1-Avispas-y-Abejas-Episodio2.CodigoInicial.st----!
+
+----SNAPSHOT----(21 April 2022 19:36:24) CuisUniversity-5096.image priorSource: 4558267!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:37:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:37:03'!
+ERROR!
+
+----STARTUP---- (21 April 2022 19:37:31) as /Users/juliangorge/Downloads/macos64/CuisUniversity-5096.image!
+
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:38:33'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:38:33'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:40:15'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:40:15'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:41:30'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:41:30'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:42:10'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:42:10'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:44:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:44:21'!
+ERROR!
+
+!classRemoval: #PruebasReproduccionDeAvispas stamp: 'JG 4/21/2022 19:45:04'!
+DenotativeObject subclass: #PruebasReproduccionDeAvispas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+----End fileIn of /Users/juliangorge/Downloads/ejercicios-2022-1c-main/01-AvispasYAbejas/Ejercicio1-Avispas-y-Abejas-Episodio2.CodigoInicial.st----!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:46:15'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:46:15'!
+ERROR!
+
+!classDefinition: #patio category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 19:47:38'!
+DenotativeObject subclass: #patio
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 19:47:33' prior: 50474855!
+habitat
+	^patio.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:47:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:47:48'!
+ERROR!
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 19:48:21'!
+cantidadDeHuevosDeAvispas
+	^0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:48:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:49:08'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:49:08'!
+ERROR!
+
+!classDefinition: #Oriana category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 19:49:49'!
+DenotativeObject subclass: #Oriana
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 19:49:45' prior: 50474875!
+laAvispaOriana
+	^ Oriana.! !
+!Oriana class methodsFor: 'nil' stamp: 'JG 4/21/2022 19:50:12'!
+intentarReproducirse
+	^0.! !
+!Oriana class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:50:18' prior: 50474982!
+intentarReproducirse
+	^1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:50:27'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:50:27'!
+ERROR!
+
+patio
+	collaboratorNames: 'huevosDeAvispas'
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'patio class' category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 19:51:45'!
+patio class
+	instanceVariableNames: 'huevosDeAvispas'!
+
+!classDefinition: #patio category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 19:51:45'!
+DenotativeObject subclass: #patio
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'patio class' category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 19:51:45'!
+patio class
+	instanceVariableNames: 'huevosDeAvispas'!
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 19:52:26'!
+sumarHuevo
+	self huevosDeAvispa += 1.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:52:37' prior: 50475014!
+sumarHuevo
+	self huevosDeAvispas += 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:52:59'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:52:59'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:53:21' prior: 50474958!
+cantidadDeHuevosDeAvispas
+	^ self huevosDeAvispas.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:53:24' prior: 50475030!
+cantidadDeHuevosDeAvispas
+	^ huevosDeAvispas.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:53:30' prior: 50475019!
+sumarHuevo
+	huevosDeAvispas += 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:53:37'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:53:37'!
+ERROR!
+!Oriana class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:54:38' prior: 50474986!
+intentarReproducirse
+	^patio sumarHuevo.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:54:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:54:46'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:55:03' prior: 50475040!
+sumarHuevo
+	huevosDeAvispas = huevosDeAvispas + 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:55:08'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:55:08'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:56:02'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:56:02'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:56:16' prior: 50475061!
+sumarHuevo
+	huevosDeAvispas = (huevosDeAvispas + 1).! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:56:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:56:40'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:56:40'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:57:33'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:57:33'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:57:37' prior: 50475078!
+sumarHuevo
+	huevosDeAvispas := (huevosDeAvispas + 1).! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:57:39'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:57:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:57:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:58:42'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:58:42'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 19:59:15' prior: 50475098!
+sumarHuevo
+	huevosDeAvispas := 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 19:59:20'!
+PASSED!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:00:22' prior: 50474925!
+retrocederElHabitatAlInicioDeLosTiempos
+	patio reiniciar.! !
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:00:38'!
+reiniciar
+	huevosDeAvispas := 0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:00:54'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:01:00'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:01:06'!
+PASSED!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:01:33' prior: 50475118!
+sumarHuevo
+	huevosDeAvispas := huevosDeAvispas + 1.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:01:46' prior: 50475143!
+sumarHuevo
+	huevosDeAvispas := [huevosDeAvispas + 1].! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:02:09'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:02:09'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - Oriana' stamp: 'JG 4/21/2022 20:03:10' prior: 50474584!
+test03CadaVezQueOrianaSeReproduceDejaUnHuevoMas
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	"self hacerQueElHabitatTengaLosRecursosSuficientes."
+	self laAvispaOriana intentarReproducirse.
+	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 2.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:03:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:03:12'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:04:33' prior: 50475148!
+sumarHuevo
+	|huevosTmp|
+	huevosTmp := huevosDeAvispas.
+	huevosTmp := huevosTmp + 1.	
+	huevosDeAvispas := huevosTmp.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:04:41'!
+PASSED!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:05:06' prior: 50475179!
+sumarHuevo
+	huevosDeAvispas := huevosDeAvispas + 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:05:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:05:21'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:05:32'!
+PASSED!
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - Oriana' stamp: 'JG 4/21/2022 20:05:38' prior: 50475160!
+test03CadaVezQueOrianaSeReproduceDejaUnHuevoMas
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	self laAvispaOriana intentarReproducirse.
+	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 2.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:05:42'!
+PASSED!
+
+!classDefinition: 'patio class' category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 20:06:34'!
+patio class
+	instanceVariableNames: 'huevosDeAvispas orugas'!
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:06:33'!
+queElHabitatTengaUnaOrugaMas
+	orugas := orugas + 1.! !
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:07:05'!
+cantidadDeOrugas
+	^ orugas.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:07:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:07:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:08:06'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:08:06'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:08:15'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:08:15'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:09:02' prior: 50474911!
+queElHabitatTengaUnaOrugaMas
+	patio queElHabitatTengaUnaOrugaMas.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:09:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:09:14'!
+ERROR!
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:10:06' overrides: 16904184!
+initialize
+	orugas := 0.
+	huevosDeAvispas := 0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:10:40'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:10:40'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:11:22' prior: 50475189!
+sumarHuevo
+	huevosDeAvispas := huevosDeAvispas + 1.
+	orugas := orugas - 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:11:49'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:11:49'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:12:37' prior: 50475272!
+sumarHuevo
+	huevosDeAvispas := huevosDeAvispas + 1.
+	orugas := 0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:12:44'!
+PASSED!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:12:52' prior: 50475284!
+sumarHuevo
+	huevosDeAvispas := huevosDeAvispas + 1.
+	orugas := orugas - 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:12:57'!
+PASSED!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:14:15' prior: 50475293!
+sumarHuevo
+	huevosDeAvispas := huevosDeAvispas + 1.
+	orugas := 3.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:14:40'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:14:40'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:14:53' prior: 50475302!
+sumarHuevo
+	huevosDeAvispas := huevosDeAvispas + 1.
+	orugas := orugas - 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:14:59'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:14:59'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:16:46' prior: 50475130!
+reiniciar
+	huevosDeAvispas := 0.
+	orugas := 0.! !
+
+!methodRemoval: patio class #initialize stamp: 'JG 4/21/2022 20:16:53'!
+initialize
+	orugas := 0.
+	huevosDeAvispas := 0.!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:17:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:17:18'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:17:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:17:38'!
+PASSED!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:19:19' prior: 50474896!
+queElHabitatTengaDosOrugasMas
+	patio queElHabitatTengaDosOrugasMas.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:19:27' prior: 50474903!
+queElHabitatTengaDosPolillasMas
+	patio queElHabitatTengaDosPolillasMas.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:19:36' prior: 50474918!
+queElHabitatTengaUnaPolillaMas
+	patio queElHabitatTengaUnaPolillaMas.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:19:44'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:19:44'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:20:03'!
+queElHabitatTengaDosOrugasMas
+	self shouldBeImplemented.! !
+
+lf shouldBeImplemented!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:20:35' prior: 50475369!
+queElHabitatTengaDosOrugasMas
+	orugas := orugas +2.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:20:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:20:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:20:51'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:20:51'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:24:12' prior: 50475313!
+sumarHuevo
+
+	"test06CuandoNoHayOrugasOrianaLaAvispaNoPuedeDejarHuevos"
+	(orugas = 0)  ifTrue: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	]! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:24:27' prior: 50475392!
+sumarHuevo
+
+	"test06CuandoNoHayOrugasOrianaLaAvispaNoPuedeDejarHuevos"
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	]! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:24:30' prior: 50475401!
+sumarHuevo
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	]! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:24:32' prior: 50475410!
+sumarHuevo
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	].! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:25:00' prior: 50475417!
+sumarHuevo
+
+	"test06CuandoNoHayOrugasOrianaLaAvispaNoPuedeDejarHuevos"
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	]! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:25:13' prior: 50475424!
+sumarHuevo
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	]! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:25:22'!
+PASSED!
+
+----SNAPSHOT----(21 April 2022 20:25:27) CuisUniversity-5096.image priorSource: 4571044!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:25:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:25:50'!
+ERROR!
+
+!classDefinition: #Ornella category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 20:26:16'!
+DenotativeObject subclass: #Ornella
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:26:13' prior: 50474882!
+laAvispaOrnella
+	^Ornella.! !
+
+!classDefinition: #Polly category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 20:26:25'!
+DenotativeObject subclass: #Polly
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:26:24' prior: 50474889!
+laAvispaPolly
+	^Polly.! !
+!Ornella class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:27:33'!
+intentarReproducirse
+	^patio sumarHuevo.! !
+!Polly class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:27:37'!
+intentarReproducirse
+	^patio sumarHuevo.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:27:42'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:27:42'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:28:26' prior: 50474862!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	patio hacerQueElHabitatTengaLosRecursosSuficientes.! !
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:28:39'!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	orugas := 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:28:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:29:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:29:29'!
+PASSED!
+
+----SNAPSHOT----(21 April 2022 20:29:42) CuisUniversity-5096.image priorSource: 4601323!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:30:04'!
+PASSED!
+
+patio
+	collaboratorNames: 'huevosDeAvispas orugas polillas'
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'patio class' category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 20:30:21'!
+patio class
+	instanceVariableNames: 'huevosDeAvispas orugas polillas'!
+
+!classDefinition: #patio category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 20:30:21'!
+DenotativeObject subclass: #patio
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'patio class' category: 'AvispasYAbejasParte2' stamp: 'JG 4/21/2022 20:30:21'!
+patio class
+	instanceVariableNames: 'huevosDeAvispas orugas polillas'!
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:30:30'!
+cantidadDePolillas
+	^polillas.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:30:36'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:30:36'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:30:52' prior: 50475495!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	orugas := 1.
+	polillas := 1.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:31:24' prior: 50475545!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	orugas := 1.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:32:21'!
+sumarHuevoAvispas
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	]! !
+!Ornella class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:32:31' prior: 50475474!
+intentarReproducirse
+	^patio sumarHuevoAvispas.! !
+!Oriana class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:32:35' prior: 50475050!
+intentarReproducirse
+	^patio sumarHuevoAvispas.! !
+!Polly class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:32:39' prior: 50475478!
+intentarReproducirse
+	^patio sumarHuevoPolillas.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:32:50'!
+sumarHuevoPolillas
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	]! !
+
+!methodRemoval: patio class #sumarHuevo stamp: 'JG 4/21/2022 20:32:50'!
+sumarHuevo
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		orugas := orugas - 1.
+	]!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:33:08' prior: 50475578!
+sumarHuevoPolillas
+	(orugas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		polillas := polillas - 1.
+	]! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:33:17'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:33:17'!
+ERROR!
+!patio class methodsFor: 'nil' stamp: 'JG 4/21/2022 20:33:38'!
+queElHabitatTengaUnaPolillaMas
+	polillas := polillas + 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:33:43'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:33:43'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'JG 4/21/2022 20:36:13' prior: 50475126!
+retrocederElHabitatAlInicioDeLosTiempos
+	patio retrocederElHabitatAlInicioDeLosTiempos.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:36:21'!
+retrocederElHabitatAlInicioDeLosTiempos
+	huevosDeAvispas := 0.
+	orugas := 0.! !
+
+!methodRemoval: patio class #reiniciar stamp: 'JG 4/21/2022 20:36:21'!
+reiniciar
+	huevosDeAvispas := 0.
+	orugas := 0.!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:36:27' prior: 50475621!
+retrocederElHabitatAlInicioDeLosTiempos
+	huevosDeAvispas := 0.
+	orugas := 0.
+	polillas := 0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:36:32'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:36:32'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:36:39'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:36:39'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:38:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:38:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:45:25'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:45:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:45:50'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:50:35' prior: 50475591!
+sumarHuevoPolillas
+	(polillas = 0)  ifFalse: [ 
+		huevosDeAvispas := huevosDeAvispas + 1.
+		polillas := polillas - 1.
+	]! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:50:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:50:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:50:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:50:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:50:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:50:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:50:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:00'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:00'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:51:09'!
+queElHabitatTengaDosPolillasMas
+	self shouldBeImplemented.! !
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:51:20' prior: 50475697!
+queElHabitatTengaDosPolillasMas
+	polillas := polillas + 2.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:25'!
+PASSED!
+
+----SNAPSHOT----(21 April 2022 20:51:34) CuisUniversity-5096.image priorSource: 4603447!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:51:48'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:52:08' prior: 50475551!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	orugas := 1.
+	polillas := 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:17'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:17'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:17'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:20'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:20'!
+ERROR!
+!patio class methodsFor: 'as yet unclassified' stamp: 'JG 4/21/2022 20:52:52' prior: 50475734!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	orugas := 1.
+	polillas := 1.
+	huevosDeAvispas := 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:59'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:59'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:59'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:59'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:59'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:59'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'JG 4/21/2022 20:52:59'!
+ERROR!
+
+----SNAPSHOT----(21 April 2022 20:53:04) CuisUniversity-5096.image priorSource: 4609977!
+
+----SNAPSHOT----(22 April 2022 02:52:15) CuisUniversity-5096.image priorSource: 4613012!
+
+----SNAPSHOT----(22 April 2022 02:52:24) CuisUniversity-5096.image priorSource: 4613102!
+
+----SNAPSHOT----(22 April 2022 02:52:27) CuisUniversity-5096.image priorSource: 4613192!
