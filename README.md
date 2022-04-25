@@ -11,3 +11,8 @@ El diccionario, fue incorporado con el fin de acostumbrarnos a la sintaxis del e
 Al principio, se implementaron a Ornella y Oriana como objetos separados que respondían los mismos mensajes. Por lo tanto, concluímos que podríamos tratar a una como "objeto hijo" de la otra y evitar la repetición de código.
 
 Definimos al Habitat como el responsable de validar la cantidad de recursos y cantidad de huevos. Creemos que es correcto ésto ya que debido a que, como una hipotética representación de la realidad, los insectos dejan sus huevos y luego no saben si seran todos nuevas avispas o robados por otra para ser alimento.
+
+
+Alumnos:
+Julián Gorge - 104286
+William Ramirez - 105706
