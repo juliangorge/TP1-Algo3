@@ -1,9 +1,9 @@
 # Cuestionario
 
-Abstracción de los test 01 y 02
+AbstracciÃ³n de los test 01 y 02
 
-Para esta abstracción primero consideramos la idea de crear un objeto “Clock” que se encargara de contabilizar el tiempo que ocupaba una tarea, registrando un tiempo inicial y final en base al tiempo del sistema
-Y que después realizara la diferencia para calcular el tiempo de ejecución. Después de esto nos topamos que solamente servía para las pruebas por ende decidimos cambiar la implementación a un mensaje dentro de las pruebas que hiciera la comparación.
+Para esta abstracciÃ³n primero consideramos la idea de crear un objeto â€œClockâ€ que se encargara de contabilizar el tiempo que ocupaba una tarea, registrando un tiempo inicial y final en base al tiempo del sistema
+Y que despuÃ©s realizara la diferencia para calcular el tiempo de ejecuciÃ³n. DespuÃ©s de esto nos topamos que solamente servÃ­a para las pruebas por ende decidimos cambiar la implementaciÃ³n a un mensaje dentro de las pruebas que hiciera la comparaciÃ³n.
 
 Como representar en Smalltalk
 
@@ -11,11 +11,12 @@ En la realidad observamos como objetos a los entes particulares, las ideas o con
 En Smalltalk podemos representar estos como una clase (para ideas o conceptos), instancias (para objetos particulares) y modelo (representando la realidad). 
 
 Teoria de Naur
-¿Qué relación hay entre sacar código repetido (creando abstracciones) y la teoría del modelo/sistema (del paper de Naur)?
+Â¿QuÃ© relaciÃ³n hay entre sacar cÃ³digo repetido (creando abstracciones) y la teorÃ­a del modelo/sistema (del paper de Naur)?
 
-El Paper de Naur habla sobre tres áreas esenciales que un programador puede aprovechar al ser un creador de teoría. 
-# El poder explicar cómo la solución se relaciona con los problemas del mundo real y ayuda a resolver.
-# Que puede explicar por qué cada parte del programa es como es.
-# que tiene la teoría del programa puede responder constructivamente a cualquier demanda de modificación del programa, para manejar los problemas del mundo en una manera distinta.
+El Paper de Naur habla sobre tres Ã¡reas esenciales que un programador puede aprovechar al ser un creador de teorÃ­a. 
+# El poder explicar cÃ³mo la soluciÃ³n se relaciona con los problemas del mundo real y ayuda a resolver.
+# Que puede explicar por quÃ© cada parte del programa es como es.
+# que tiene la teorÃ­a del programa puede responder constructivamente a cualquier demanda de modificaciÃ³n del programa, para manejar los problemas del mundo en una manera distinta.
 
-Este último punto podría ser vinculante con la idea de quitar código repetido debido a que la necesidad futura de modificación del programa necesita las mejores prácticas posibles de abstracción y reutilización de código, haciendolo más legible y simplificado en sus responsabilidades y areas de dominio.
+Este Ãºltimo punto podrÃ­a ser vinculante con la idea de quitar cÃ³digo repetido debido a que la necesidad futura de modificaciÃ³n del programa necesita las mejores prÃ¡cticas posibles de abstracciÃ³n y reutilizaciÃ³n de cÃ³digo, haciendolo mÃ¡s legible y simplificado en sus responsabilidades y areas de dominio.
+En este ejercicio los costes de realizar la simplificacion del codigo no son contempladas pero en un ambiente laboral real esto puede resultar en un coste importante
