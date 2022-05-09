@@ -372,7 +372,7 @@ Numero subclass: #Entero
 
 !Entero methodsFor: 'arithmetic operations' stamp: 'JG 5/8/2022 20:53:43'!
 fibonacci
-	^ self subclassResponsibility.! !
+	self subclassResponsibility.! !
 
 
 !Entero methodsFor: 'comparing' stamp: 'JG 5/7/2022 23:37:21'!
@@ -392,7 +392,7 @@ initializeWith: aValue
 !Entero methodsFor: 'accessing' stamp: 'JG 5/8/2022 20:06:15'!
 integerValue
 	"Usamos integerValue en vez de value para que no haya problemas con el mensaje value implementado en Object - Hernan"
-	^ self subclassResponsibility.! !
+	self subclassResponsibility.! !
 
 
 !Entero methodsFor: 'printing' stamp: 'JG 5/8/2022 20:39:37'!
@@ -402,7 +402,7 @@ printOn: aStream
 
 !Entero methodsFor: 'testing' stamp: 'JG 5/8/2022 20:09:35'!
 isNegative
-	^ self subclassResponsibility.! !
+	self subclassResponsibility.! !
 
 !Entero methodsFor: 'testing' stamp: 'JG 5/8/2022 19:18:17'!
 isOne

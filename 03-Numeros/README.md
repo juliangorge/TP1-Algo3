@@ -15,8 +15,18 @@ Dependiendo de la función del mensaje la categorización que usamos se divide e
 
 Subclass Responsability
 
+Un objeto abstracto es un objeto que existe para ser subclasificado en lugar de ser instanciado. Éste no suele definir todos sus métodos en sí, sino que hay algunos que no están definidos en sí mismo y son métodos abtractos.
+
+Smalltalk no ha dedicado sintaxis para especificar que un metodo o una clase sean abstractos. Por convención, el cuarpo de un método abstracto consiste en una expresión "self subclassResponsibility". Esto es conocido como un "marker method" e indica que las subclases tienen la responsabilidad de definir una versión concreta del método. 
+Los métodos "self subclassResponsibility" deberían siempre ser anulado, y por lo tanto nunca debe ser ejecutado. Sino se ejecutará una excepción.
 
 
 No Rompas
 
-El hecho de romper encapsulamiento tiene que ver con darle a conocer a un objeto atributos de otro que no debería conocer esto lleva a un problema de extensión a futuro.
+El encapsulamiento es un mecanismo de protección de atributos y métodos, que protege a los datos asociados de un objeto contra su modificación por quien no tenga derecho a acceder a ellos, eliminando efectos secundarios e interacciones en cuanto al ocultamiento de los datos, como también futuros problemas en la extensión a futuro del programa e inestabilidad a la hora del mantenimiento del mismo.
+
+--
+La version que entregamos cumple lo pedido de lejercicio incluyendo algunos avances entorno al refactor propuesto para los puntos extra.
+
+Alumnos:
+Julián Gorge (104286) y William Ramirez (105706)
