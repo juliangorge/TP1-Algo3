@@ -1,0 +1,423 @@
+!classDefinition: #OOStackTest category: 'Stack-Exercise'!
+TestCase subclass: #OOStackTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!OOStackTest methodsFor: 'test' stamp: 'HernanWilkinson 5/7/2012 11:30'!
+test01StackShouldBeEmptyWhenCreated
+
+	| stack |
+	
+	stack := OOStack new.
+	
+	self assert: stack isEmpty! !
+
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:29:55'!
+test02PushAddElementsToTheStack
+
+	| stack |
+	
+	stack := OOStack new.
+	stack push: 'something'.
+	
+	self deny: stack isEmpty! !
+
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:01'!
+test03PopRemovesElementsFromTheStack
+
+	| stack |
+	
+	stack := OOStack new.
+	stack push: 'something'.
+	stack pop.
+	
+	self assert: stack isEmpty! !
+
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:09'!
+test04PopReturnsLastPushedObject
+
+	| stack pushedObject |
+	
+	stack := OOStack new.
+	pushedObject := 'something'.
+	stack push: pushedObject.
+	
+	self assert: stack pop = pushedObject! !
+
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:48'!
+test05StackBehavesLIFO
+
+	| stack firstPushedObject secondPushedObject |
+	
+	stack := OOStack new.
+	firstPushedObject := 'first'.
+	secondPushedObject := 'second'.
+	
+	stack push: firstPushedObject.
+	stack push: secondPushedObject.
+	
+	self assert: stack pop = secondPushedObject.
+	self assert: stack pop = firstPushedObject.
+	self assert: stack isEmpty 
+	! !
+
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:20'!
+test06TopReturnsLastPushedObject
+
+	| stack pushedObject |
+	
+	stack := OOStack new.
+	pushedObject := 'something'.
+	
+	stack push: pushedObject.
+	
+	self assert: stack top = pushedObject.
+	! !
+
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:24'!
+test07TopDoesNotRemoveObjectFromStack
+
+	| stack pushedObject |
+	
+	stack := OOStack new.
+	pushedObject := 'something'.
+	
+	stack push: pushedObject.
+	
+	self assert: stack size = 1.
+	stack top.
+	self assert: stack size = 1.
+	! !
+
+!OOStackTest methodsFor: 'test' stamp: 'HAW 4/14/2017 22:48:26'!
+test08CanNotPopWhenThereAreNoObjectsInTheStack
+
+	| stack  |
+	
+	stack := OOStack new.
+	self
+		should: [ stack pop ]
+		raise: Error - MessageNotUnderstood 
+		withExceptionDo: [ :anError |
+			self assert: anError messageText = OOStack stackEmptyErrorDescription ]
+		
+! !
+
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:31'!
+test09CanNotPopWhenThereAreNoObjectsInTheStackAndTheStackHadObjects
+
+	| stack  |
+	
+	stack := OOStack new.
+	stack push: 'something'.
+	stack pop.
+	
+	self
+		should: [ stack pop ]
+		raise: Error - MessageNotUnderstood 
+		withExceptionDo: [ :anError |
+			self assert: anError messageText = OOStack stackEmptyErrorDescription ]
+		
+! !
+
+!OOStackTest methodsFor: 'test' stamp: 'HAW 4/14/2017 22:48:44'!
+test10CanNotTopWhenThereAreNoObjectsInTheStack
+
+	| stack  |
+	
+	stack := OOStack new.
+	self
+		should: [ stack top ]
+		raise: Error - MessageNotUnderstood 
+		withExceptionDo: [ :anError |
+			self assert: anError messageText = OOStack stackEmptyErrorDescription ]
+		
+! !
+
+
+!classDefinition: #SentenceFinderByPrefixTest category: 'Stack-Exercise'!
+TestCase subclass: #SentenceFinderByPrefixTest
+	instanceVariableNames: 'stack finder'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'JG 5/14/2022 16:46:44'!
+test01EmptyPrefixReturnsError
+	|aString|
+	
+	aString := ''.
+	self 
+		should: [finder find: aString in: stack.]	
+		raise: Error
+		withExceptionDo: [ :anError | self assert: SentenceFinderByPrefix CanNotFindAnEmptyPrefixError equals: anError messageText ].! !
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'JG 5/14/2022 16:47:47'!
+test02PrefixWithASingleSpaceCharacterReturnsError
+	|aString|
+	
+	aString := ' '.
+	self 
+		should: [finder find: aString in: stack.]	
+		raise: Error
+		withExceptionDo: [ :anError | self assert: SentenceFinderByPrefix CanNotBeASingleSpaceCharacterError equals: anError messageText ].! !
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'JG 5/14/2022 17:07:55'!
+test03SentenceFinderIsCaseSensitive
+	| aString |
+
+	aString := 'Coming'.
+	self assert: [finder find: aString in: stack] value isEmpty equals: true.	
+
+	aString := 'Winter'.
+	self assert: [finder find: aString in: stack] value isEmpty equals: false.	
+	
+	aString := 'wint'.
+	self assert: [finder find: aString in: stack] value isEmpty equals: false.
+! !
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'war 5/15/2022 19:26:30'!
+test04PrefixNotFound! !
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'war 5/15/2022 19:26:46'!
+test05AdmitsSpecialCharacters! !
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'war 5/15/2022 19:27:05'!
+test06WorksWithSingleCharacters! !
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'war 5/15/2022 19:27:29'!
+test07AdmitsNumbers! !
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'war 5/15/2022 19:27:57'!
+test08PrefixStartsWithSpaceCharacter! !
+
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'war 5/15/2022 19:29:38'!
+test09FindsWhatIsExpected! !
+
+
+!SentenceFinderByPrefixTest methodsFor: 'setup' stamp: 'war 5/15/2022 19:32:06'!
+setUp
+
+	stack := OOStack new.
+
+	stack push: 'winter is coming' .
+
+	stack push: 'winning is everything' .
+
+	stack push: 'The winds of Winter' .
+
+	stack push: 'Winter is here' .
+	
+	stack push: '13 de Febrero' .
+	
+	stack push: '¿Ganaron?' .
+	
+	stack push: ' bueno' .
+	
+	finder := SentenceFinderByPrefix new.! !
+
+
+!classDefinition: #Node category: 'Stack-Exercise'!
+Object subclass: #Node
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!Node methodsFor: 'initialization' stamp: 'war 5/14/2022 15:11:46'!
+initialize
+	
+	self subclassResponsibility .! !
+
+!Node methodsFor: 'initialization' stamp: 'war 5/14/2022 15:16:05'!
+initializeWith: anObject
+	
+	self subclassResponsibility .! !
+
+
+!Node methodsFor: 'accessing' stamp: 'war 5/14/2022 15:17:56'!
+value
+	
+	self subclassResponsibility .! !
+
+
+!classDefinition: #EmptyNode category: 'Stack-Exercise'!
+Node subclass: #EmptyNode
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!EmptyNode methodsFor: 'accessing' stamp: 'war 5/14/2022 15:18:23'!
+value
+	
+	^ value ! !
+
+
+!EmptyNode methodsFor: 'initialization' stamp: 'war 5/14/2022 15:13:22'!
+initialize
+	
+	value := nil ! !
+
+!EmptyNode methodsFor: 'initialization' stamp: 'war 5/14/2022 15:20:39'!
+initializeWith: anObject
+	
+	! !
+
+
+!classDefinition: #ValueNode category: 'Stack-Exercise'!
+Node subclass: #ValueNode
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!ValueNode methodsFor: 'accessing' stamp: 'war 5/14/2022 14:59:10'!
+value
+
+	^value! !
+
+
+!ValueNode methodsFor: 'initialization' stamp: 'war 5/14/2022 15:16:58'!
+initialize! !
+
+!ValueNode methodsFor: 'initialization' stamp: 'war 5/14/2022 14:58:57'!
+initializeWith: anObject
+
+	value := anObject .! !
+
+
+!classDefinition: #OOStack category: 'Stack-Exercise'!
+Object subclass: #OOStack
+	instanceVariableNames: 'collection'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!OOStack methodsFor: 'accessing' stamp: 'JG 5/14/2022 16:56:46'!
+get
+	^ collection.! !
+
+!OOStack methodsFor: 'accessing' stamp: 'JG 5/14/2022 16:37:55'!
+isEmpty
+	
+	^ ( ( collection first ) class ) = EmptyNode .
+! !
+
+!OOStack methodsFor: 'accessing' stamp: 'war 5/13/2022 18:19:04'!
+pop
+	
+	| lastElement |
+			
+	self errorEmptyStack .
+
+	lastElement := collection removeLast.
+	
+	self checkIfEmpty .
+	
+	^ lastElement value .! !
+
+!OOStack methodsFor: 'accessing' stamp: 'JG 5/14/2022 16:37:36'!
+push: anObject
+	
+	| newNode |
+	
+	newNode := ValueNode new initializeWith: anObject .
+	
+	self firstClear .
+	
+	collection add: newNode .! !
+
+!OOStack methodsFor: 'accessing' stamp: 'war 5/11/2022 23:19:30'!
+size
+
+	^ collection  size.! !
+
+!OOStack methodsFor: 'accessing' stamp: 'war 5/13/2022 18:19:47'!
+top
+
+	self errorEmptyStack .
+	
+	^ ( collection at: collection size ) value.! !
+
+
+!OOStack methodsFor: 'private' stamp: 'war 5/13/2022 17:50:51'!
+checkIfEmpty
+
+	( collection isEmpty ) ifTrue: [ self emptyStackState. ]! !
+
+!OOStack methodsFor: 'private' stamp: 'JG 5/14/2022 16:37:55'!
+emptyStackState
+
+	| emptyNode |
+	
+	emptyNode := EmptyNode new .
+	
+	collection add: emptyNode ! !
+
+!OOStack methodsFor: 'private' stamp: 'war 5/13/2022 18:19:23'!
+errorEmptyStack
+
+	( self isEmpty ) ifTrue: [ self error: self class stackEmptyErrorDescription ]! !
+
+!OOStack methodsFor: 'private' stamp: 'war 5/14/2022 15:27:44'!
+firstClear
+
+	( self isEmpty ) ifTrue: [ collection remove: collection first ].! !
+
+
+!OOStack methodsFor: 'initialization' stamp: 'war 5/13/2022 17:53:04'!
+initialize
+	
+	collection := OrderedCollection new .
+	
+	self emptyStackState .! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'OOStack class' category: 'Stack-Exercise'!
+OOStack class
+	instanceVariableNames: ''!
+
+!OOStack class methodsFor: 'error descriptions' stamp: 'HernanWilkinson 5/7/2012 11:51'!
+stackEmptyErrorDescription
+	
+	^ 'Stack is empty'! !
+
+
+!classDefinition: #SentenceFinderByPrefix category: 'Stack-Exercise'!
+Object subclass: #SentenceFinderByPrefix
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!SentenceFinderByPrefix methodsFor: 'accessing' stamp: 'JG 5/14/2022 16:57:01'!
+find: aPrefix in: aStack
+
+	(aPrefix = '') ifTrue: [ ^ self error: self class CanNotFindAnEmptyPrefixError. ].
+	(aPrefix includesSubString: ' ') ifTrue: [ ^ self error: self class CanNotBeASingleSpaceCharacterError. ] .
+	
+	^ aStack get select: [
+		:element | element value beginsWith: aPrefix 
+	].
+
+	"El stack al terminar la operación de búsqueda debe de mantener las mismas oraciones en idéntico orden.	"! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'SentenceFinderByPrefix class' category: 'Stack-Exercise'!
+SentenceFinderByPrefix class
+	instanceVariableNames: ''!
+
+!SentenceFinderByPrefix class methodsFor: 'as yet unclassified' stamp: 'JG 5/14/2022 16:47:47'!
+CanNotBeASingleSpaceCharacterError
+	^ 'No puede contener espacios vacios'.
+	"(aPrefix includesSubString: ' ') ifTrue: [ ^ 'NoPuedeContenerEspaciosVaciosError'. ]."! !
+
+!SentenceFinderByPrefix class methodsFor: 'as yet unclassified' stamp: 'JG 5/14/2022 16:46:44'!
+CanNotFindAnEmptyPrefixError
+	^ 'No se puede buscar un prefijo vacio'.
+	"	(aPrefix = '') ifTrue: [ ^ 'NoSePuedeBuscarPrefijoVacioError'. ]."! !
