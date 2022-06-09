@@ -261,15 +261,16 @@ value
 	self subclassResponsibility ! !
 
 
-!AccountTransaction methodsFor: 'as yet unclassified' stamp: 'JG 6/2/2022 21:42:34'!
-applyToBalance: aBalance
-	self subclassResponsibility.! !
-
-!AccountTransaction methodsFor: 'as yet unclassified' stamp: 'JG 6/6/2022 19:35:25'!
+!AccountTransaction methodsFor: 'private' stamp: 'JG 6/9/2022 18:25:32'!
 checkIfValueIsNegative: aValue
 	(aValue < 0) ifTrue: [
-		self error: 'No puede ser un valor negativo'.
+		^ self error: self class valueMustNotBeNegativeErrorDescription.
 	].! !
+
+
+!AccountTransaction methodsFor: 'public' stamp: 'JG 6/2/2022 21:42:34'!
+applyToBalance: aBalance
+	self subclassResponsibility.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -288,8 +289,8 @@ register: aValue on: account
 	^ transaction! !
 
 
-!AccountTransaction class methodsFor: 'error descriptions' stamp: 'JG 6/6/2022 19:02:57'!
-valueMustNotBeNegative
+!AccountTransaction class methodsFor: 'error descriptions' stamp: 'JG 6/9/2022 18:24:31'!
+valueMustNotBeNegativeErrorDescription
 	^ 'No puede ser un valor negativo'.! !
 
 
@@ -311,7 +312,7 @@ value
 	^ value.! !
 
 
-!Deposit methodsFor: 'as yet unclassified' stamp: 'JG 6/2/2022 21:42:51'!
+!Deposit methodsFor: 'public' stamp: 'JG 6/2/2022 21:42:51'!
 applyToBalance: aBalance
 	^ aBalance + value.! !
 
@@ -344,7 +345,7 @@ value
 	^ value.! !
 
 
-!Withdraw methodsFor: 'as yet unclassified' stamp: 'JG 6/2/2022 21:43:06'!
+!Withdraw methodsFor: 'public' stamp: 'JG 6/2/2022 21:43:06'!
 applyToBalance: aBalance
 	^ aBalance + value negated.! !
 
@@ -366,16 +367,13 @@ Object subclass: #Portfolio
 	poolDictionaries: ''
 	category: 'ServiciosFinancieros-Ejercicio'!
 
-!Portfolio methodsFor: 'as yet unclassified' stamp: 'JG 6/6/2022 20:35:11'!
-add: anAccount
-	accounts add: anAccount.
-	balance _ balance + anAccount balance.! !
+!Portfolio methodsFor: 'initialization' stamp: 'JG 6/6/2022 20:27:34'!
+initialize
+	accounts _ OrderedCollection new.
+	balance _ 0.! !
 
-!Portfolio methodsFor: 'as yet unclassified' stamp: 'JG 6/6/2022 20:32:52'!
-balance
-	^ balance.! !
 
-!Portfolio methodsFor: 'as yet unclassified' stamp: 'JG 6/9/2022 17:37:17'!
+!Portfolio methodsFor: 'private' stamp: 'JG 6/9/2022 17:37:17'!
 checkIfATransactionWasMadeFor: aValue inConceptOf: aTransactionConcept
 
 	accounts detect: [
@@ -390,14 +388,19 @@ checkIfATransactionWasMadeFor: aValue inConceptOf: aTransactionConcept
 		^ false.
 	].! !
 
-!Portfolio methodsFor: 'as yet unclassified' stamp: 'JG 6/9/2022 16:35:18'!
+
+!Portfolio methodsFor: 'public' stamp: 'JG 6/6/2022 20:35:11'!
+add: anAccount
+	accounts add: anAccount.
+	balance _ balance + anAccount balance.! !
+
+!Portfolio methodsFor: 'public' stamp: 'JG 6/6/2022 20:32:52'!
+balance
+	^ balance.! !
+
+!Portfolio methodsFor: 'public' stamp: 'JG 6/9/2022 16:35:18'!
 includes: aPortfolio 
 	^ accounts includes: aPortfolio.! !
-
-!Portfolio methodsFor: 'as yet unclassified' stamp: 'JG 6/6/2022 20:27:34'!
-initialize
-	accounts _ OrderedCollection new.
-	balance _ 0.! !
 
 
 !classDefinition: #ReceptiveAccount category: 'ServiciosFinancieros-Ejercicio'!
@@ -453,16 +456,16 @@ transactions
 	^ transactions copy! !
 
 
-!ReceptiveAccount methodsFor: 'as yet unclassified' stamp: 'JG 6/6/2022 20:40:44'!
+!ReceptiveAccount methodsFor: 'private' stamp: 'JG 6/6/2022 20:40:44'!
 checkIfADepositWasMadeFor: aValue
 	" crear un bucle que devuelva bool si hubo un Deposito/Withdraw con el valor aValue"
 	^ true.! !
 
-!ReceptiveAccount methodsFor: 'as yet unclassified' stamp: 'JG 6/6/2022 20:38:10'!
+!ReceptiveAccount methodsFor: 'private' stamp: 'JG 6/6/2022 20:38:10'!
 checkIfATransactionWasMadeFor: aValue
 	^ true.! !
 
-!ReceptiveAccount methodsFor: 'as yet unclassified' stamp: 'JG 6/9/2022 17:37:17'!
+!ReceptiveAccount methodsFor: 'private' stamp: 'JG 6/9/2022 17:37:17'!
 checkIfATransactionWasMadeFor: aValue inConceptOf: aTransactionConcept
 	" get if i have a trasaction of aTransactionConcept a value"
 
@@ -487,7 +490,7 @@ Object subclass: #Transfer
 	poolDictionaries: ''
 	category: 'ServiciosFinancieros-Ejercicio'!
 
-!Transfer methodsFor: 'public' stamp: 'JG 6/9/2022 18:13:09'!
+!Transfer methodsFor: 'public' stamp: 'JG 6/9/2022 18:23:33'!
 counterpartOf: aLeg
 	
 	(aLeg = Deposit) ifTrue: [
@@ -498,7 +501,7 @@ counterpartOf: aLeg
 		^ depositLeg value.
 	].
 
-	^ self error: 'No se encontro pata valida'.! !
+	^ self error: self class legNotFound.! !
 
 !Transfer methodsFor: 'public' stamp: 'JG 6/6/2022 18:54:20'!
 value
@@ -535,6 +538,10 @@ register: aTransactionValue from: aSenderAccount to: aReceiverAccount
 	^self new initializeRegister: aTransactionValue from: aSenderAccount to: aReceiverAccount.! !
 
 
-!Transfer class methodsFor: 'error' stamp: 'JG 6/6/2022 19:41:35'!
+!Transfer class methodsFor: 'error description' stamp: 'JG 6/9/2022 18:24:11'!
+legNotFound
+	^ 'Pata no encontrada o no valida'.! !
+
+!Transfer class methodsFor: 'error description' stamp: 'JG 6/6/2022 19:41:35'!
 sameAccountErrorDescription
 	^ 'No se puede transferir a la misma cuenta.'.! !
